@@ -1,0 +1,658 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header y navegación */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Sección Inicio */
+#inicio {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#inicio h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#inicio p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #666;
+}
+
+#inicio img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Sección Catálogo */
+#catalogo {
+    padding: 40px 0;
+    background: #f7f7f7;
+}
+
+#catalogo h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.catalogo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.producto-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.producto-card h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.producto-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Sección Ofertas */
+#ofertas {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#ofertas h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#ofertas p {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.ofertas-lista {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.ofertas-lista li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.boton-oferta {
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-oferta:hover {
+    background: #e55a00;
+}
+
+/* Sección Llaveros Personalizados */
+#personalizados {
+    padding: 40px 0;
+    background: #f7f7f7;
+}
+
+#personalizados h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#personalizados p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #666;
+}
+
+.personalizados-lista {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.personalizados-lista li {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+#personalizados img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#contacto p {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.formulario-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+}
+
+.boton-enviar {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-enviar:hover {
+    background: #e55a00;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-contenido p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-contenido a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contenido a:hover {
+    color: #ff6600;
+}
+
+.corazon {
+    color: #ff6600;
+    animation: latido 1.5s ease-in-out infinite;
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Estilos específicos para la página de contacto */
+#formulario-contacto {
+    background: linear-gradient(135deg, #f7f7f7 0%, #e8e8e8 100%);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#formulario-contacto h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#formulario-contacto h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6600, #ff8533);
+    border-radius: 2px;
+}
+
+.formulario-contacto {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.formulario-contacto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.formulario-contacto .form-label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.formulario-contacto .form-control,
+.formulario-contacto .form-select {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.formulario-contacto .form-control:focus,
+.formulario-contacto .form-select:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+.formulario-contacto .form-control::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.boton-enviar {
+    background: linear-gradient(135deg, #ff6600, #ff8533);
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.boton-enviar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.boton-enviar:hover::before {
+    left: 100%;
+}
+
+.boton-enviar:hover {
+    background: linear-gradient(135deg, #e55a00, #ff6600);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.3);
+}
+
+.boton-enviar:active {
+    transform: translateY(0);
+}
+
+/* Animación de entrada para el formulario */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formulario-contacto {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* Efecto de pulso para el botón */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 102, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0);
+    }
+}
+
+.boton-enviar:focus {
+    animation: pulse 2s infinite;
+}
+
+/* Estilos para el mensaje de confirmación */
+.texto-confirmacion {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    background: rgba(255, 102, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #ff6600;
+    margin-top: 2rem;
+}
+
+/* Efectos de validación */
+.formulario-contacto .form-control.is-valid {
+    border-color: #28a745;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='m2.3 6.73.94-.94 1.44 1.44 2.83-2.83.94.94L4.68 9.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.formulario-contacto .form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath d='m5.8 4.6 1.4 1.4 1.4-1.4'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Efecto de carga para el botón */
+.boton-enviar.loading {
+    position: relative;
+    color: transparent;
+}
+
+.boton-enviar.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Efecto de éxito */
+.boton-enviar.success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.boton-enviar.success::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Estilos para la página de agradecimiento */
+#gracias {
+    background: linear-gradient(135deg, #f7f7f7 0%, #e8e8e8 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.gracias-contenido {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: slideInUp 0.8s ease-out;
+}
+
+.icono-exito {
+    margin-bottom: 2rem;
+    animation: bounceIn 1s ease-out 0.3s both;
+}
+
+.icono-exito svg {
+    filter: drop-shadow(0 4px 8px rgba(40, 167, 69, 0.3));
+}
+
+.gracias-contenido h1 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.gracias-contenido .lead {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.info-adicional {
+    background: rgba(255, 102, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #ff6600;
+    margin: 2rem 0;
+}
+
+.info-adicional h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.info-adicional ul li {
+    padding: 0.5rem 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.botones-accion .btn {
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.botones-accion .btn-primary {
+    background: linear-gradient(135deg, #ff6600, #ff8533);
+    border: none;
+}
+
+.botones-accion .btn-primary:hover {
+    background: linear-gradient(135deg, #e55a00, #ff6600);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.3);
+}
+
+.botones-accion .btn-outline-primary {
+    border: 2px solid #ff6600;
+    color: #ff6600;
+}
+
+.botones-accion .btn-outline-primary:hover {
+    background: #ff6600;
+    border-color: #ff6600;
+    transform: translateY(-2px);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mejoras responsive para contacto */
+@media (max-width: 768px) {
+    .formulario-contacto {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    #formulario-contacto {
+        padding: 2rem 0;
+    }
+    
+    .boton-enviar {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .gracias-contenido {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .botones-accion .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .catalogo-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .producto-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
